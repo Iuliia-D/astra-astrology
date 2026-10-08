@@ -1,0 +1,103 @@
+---
+import { CelestialScene } from '../components/CelestialScene';
+import { CalendarPreview } from '../components/CalendarPreview';
+import { ForecastSection } from '../components/ZodiacSelector';
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import { currentEvent, metrics, upcomingEvents } from '../data/homepage';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { AdSlot } from '../components/ui/AdSlot';
+import { EventCard } from '../components/ui/EventCard';
+import { MetricIndicator } from '../components/ui/MetricIndicator';
+
+const formattedDate = '08 октября 2026 · четверг';
+---
+
+<BaseLayout>
+  <Header />
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__stars" aria-hidden="true"></div>
+      <div class="hero__copy">
+        <p class="eyebrow hero__label">ASTROLOGICAL MAP</p>
+        <p class="hero__date">{formattedDate}</p>
+        <h1 id="hero-title">Что происходит<br class="desktop-break" /> на небе сегодня</h1>
+        <p class="hero__description">
+          Актуальные астрономические данные и их астрологическое значение. Узнайте, как космические
+          события влияют на ваш знак зодиака.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#forecast"
+            >Открыть свой прогноз <span aria-hidden="true">→</span></a
+          >
+          <a class="button button--text" href="#calendar"
+            >Смотреть календарь <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="hero__status">
+          <span class="status-dot"></span><span>НЕБО В РЕАЛЬНОМ ВРЕМЕНИ</span><span
+            class="hero__status-line"></span><span>UTC +3</span>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__visual-caption">
+          <span>СОЛНЕЧНАЯ СИСТЕМА</span><span>СХЕМА · НЕ В МАСШТАБЕ</span>
+        </div>
+        <CelestialScene />
+        <div
+          class="global-event"
+          aria-label={`Текущее событие: ${currentEvent.planet}, ${currentEvent.title}`}
+        >
+          <div class="global-event__top">
+            <span class="status-dot"></span><span>СЕЙЧАС · СОБЫТИЕ</span><span
+              class="global-event__orb"
+              aria-hidden="true">☾</span
+            >
+          </div>
+          <div class="global-event__body">
+            <span class="global-event__planet" aria-hidden="true">☿</span><div>
+              <h2>{currentEvent.planet}</h2><p>{currentEvent.title}</p><span
+                >{currentEvent.start} — {currentEvent.end}</span
+              >
+            </div>
+          </div>
+          <p class="global-event__note">Демонстрационное событие · данные эфемерид не подключены</p>
+          <a href="#events" class="global-event__link"
+            >О событии <span aria-hidden="true">→</span></a
+          >
+        </div>
+        <div class="hero__legend">
+          <span><i class="legend-dot legend-dot--sun"></i>Солнце</span><span
+            ><i class="legend-dot legend-dot--planet"></i>Планеты</span
+          ><span><i class="legend-dot legend-dot--event"></i>Событие</span>
+        </div>
+      </div>
+      <a href="#forecast" class="scroll-cue" aria-label="Прокрутить к прогнозу"><span></span></a>
+    </section>
+
+    <ForecastSection client:load />
+
+    <section class="section metrics-section" aria-labelledby="metrics-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">СОСТОЯНИЕ НЕБА</p><h2 id="metrics-title">Космические ориентиры</h2>
+        </div><span class="data-badge"><span class="status-dot"></span>ДЕМО-ДАННЫЕ</span>
+      </div>
+      <div class="metrics-grid">{metrics.map((metric) => <MetricIndicator {...metric} />)}</div>
+    </section>
+
+    <CalendarPreview />
+
+    <section class="section events-section" id="events" aria-labelledby="events-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COSMIC TIMELINE</p><h2 id="events-title">Ближайшие события</h2>
+        </div><a class="text-link" href="#calendar">Все события <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="events-list">{upcomingEvents.map((event) => <EventCard {...event} />)}</div>
+      <AdSlot />
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

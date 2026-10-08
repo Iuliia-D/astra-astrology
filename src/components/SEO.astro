@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+}
+
+const { title, description, canonicalUrl } = Astro.props;
+---
+
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="ASTRA" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />

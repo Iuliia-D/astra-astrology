@@ -1,0 +1,31 @@
+---
+import '@fontsource-variable/inter/wght.css';
+import '../styles/global.css';
+import SEO from '../components/SEO.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'ASTRA — что происходит на небе сегодня',
+  description = 'Актуальные астрономические данные и их астрологическое значение. Исследуйте карту неба, события и персональный прогноз.',
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, 'https://astra-astrology.com').toString();
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070911" />
+    <SEO title={title} description={description} canonicalUrl={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
