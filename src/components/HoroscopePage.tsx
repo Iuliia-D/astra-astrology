@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { dailyHoroscopes } from '../data/horoscopes';
 import { findZodiacSign, zodiacSigns } from '../data/zodiac';
 import { currentEvent } from '../data/homepage';
+import { formatEventDateParts } from '../data/events';
 import { CelestialScene } from './CelestialScene';
 import { ZodiacSelector } from './ZodiacSelector';
 import { EventCard } from './ui/EventCard';
@@ -16,6 +17,8 @@ export function HoroscopePage() {
   const pageRef = useRef<HTMLElement>(null);
   const sign = findZodiacSign(selected);
   const horoscope = dailyHoroscopes[sign.id];
+  const eventStart = formatEventDateParts(currentEvent.start);
+  const eventEnd = formatEventDateParts(currentEvent.end);
 
   useEffect(() => {
     const requestedSign = new URLSearchParams(window.location.search).get('sign');
@@ -146,11 +149,11 @@ export function HoroscopePage() {
         </div>
         <a className="horoscope-event__link" href={`/events/${currentEvent.id}/`}>
           <EventCard
-            date="24 → 17"
-            month="СЕН · ОКТ"
+            date={`${eventStart.day} → ${eventEnd.day}`}
+            month={`${eventStart.month} · ${eventEnd.month}`}
             title={`${currentEvent.planet}: ${currentEvent.title}`}
             kind="Демо-событие · период"
-            glyph="☿"
+            glyph={currentEvent.glyph}
           />
         </a>
       </section>

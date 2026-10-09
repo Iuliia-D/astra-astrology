@@ -13,8 +13,11 @@ export type CelestialBody = {
 export type CelestialEvent = {
   id: string;
   type: 'period' | 'point';
+  category: 'moon' | 'retrograde' | 'eclipses' | 'transitions' | 'conjunctions';
   planet: string;
   title: string;
+  summary: string;
+  glyph: string;
   start: string;
   end: string;
   sign: string;

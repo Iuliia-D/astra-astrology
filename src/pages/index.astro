@@ -9,6 +9,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { AdSlot } from '../components/ui/AdSlot';
 import { EventCard } from '../components/ui/EventCard';
 import { MetricIndicator } from '../components/ui/MetricIndicator';
+import { formatEventRange } from '../data/events';
 
 const formattedDate = '08 октября 2026 · четверг';
 ---
@@ -27,10 +28,10 @@ const formattedDate = '08 октября 2026 · четверг';
           события влияют на ваш знак зодиака.
         </p>
         <div class="hero__actions">
-          <a class="button button--primary" href="#forecast"
+          <a class="button button--primary" href="/horoscope/"
             >Открыть свой прогноз <span aria-hidden="true">→</span></a
           >
-          <a class="button button--text" href="#calendar"
+          <a class="button button--text" href="/calendar/"
             >Смотреть календарь <span aria-hidden="true">↗</span></a
           >
         </div>
@@ -55,14 +56,14 @@ const formattedDate = '08 октября 2026 · четверг';
             >
           </div>
           <div class="global-event__body">
-            <span class="global-event__planet" aria-hidden="true">☿</span><div>
+            <span class="global-event__planet" aria-hidden="true">{currentEvent.glyph}</span><div>
               <h2>{currentEvent.planet}</h2><p>{currentEvent.title}</p><span
-                >{currentEvent.start} — {currentEvent.end}</span
+                >{formatEventRange(currentEvent)}</span
               >
             </div>
           </div>
           <p class="global-event__note">Демонстрационное событие · данные эфемерид не подключены</p>
-          <a href="#events" class="global-event__link"
+          <a href={`/events/${currentEvent.id}/`} class="global-event__link"
             >О событии <span aria-hidden="true">→</span></a
           >
         </div>
@@ -92,10 +93,17 @@ const formattedDate = '08 октября 2026 · четверг';
       <div class="section-heading">
         <div>
           <p class="eyebrow">COSMIC TIMELINE</p><h2 id="events-title">Ближайшие события</h2>
-        </div><a class="text-link" href="#calendar">Все события <span aria-hidden="true">↗</span></a
-        >
+        </div><a class="text-link" href="/events/">Все события <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="events-list">{upcomingEvents.map((event) => <EventCard {...event} />)}</div>
+      <div class="events-list">
+        {
+          upcomingEvents.map((event) => (
+            <a class="home-event-link" href={`/events/${event.id}/`}>
+              <EventCard {...event} />
+            </a>
+          ))
+        }
+      </div>
       <AdSlot />
     </section>
   </main>

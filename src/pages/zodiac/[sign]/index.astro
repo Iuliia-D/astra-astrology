@@ -1,0 +1,96 @@
+---
+import { CelestialScene } from '../../../components/CelestialScene';
+import { Footer } from '../../../components/Footer';
+import { Header } from '../../../components/Header';
+import { ZodiacIcon } from '../../../components/ui/ZodiacIcon';
+import { findZodiacSign, zodiacSigns } from '../../../data/zodiac';
+import { zodiacProfiles } from '../../../data/zodiacProfiles';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return zodiacSigns.map((sign) => ({ params: { sign: sign.id } }));
+}
+
+const sign = findZodiacSign(Astro.params.sign ?? '');
+const profile = zodiacProfiles[sign.id];
+---
+
+<BaseLayout
+  title={`${sign.name} — знак зодиака | ASTRA`}
+  description={`${sign.name}: ${sign.dates}. Астрологический профиль, отношения, работа и финансы.`}
+>
+  <Header currentPage="zodiacDetail" />
+  <main class="zodiac-profile page-container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/zodiac/">Знаки зодиака</a>
+      <span aria-hidden="true">/</span><span aria-current="page">{sign.name}</span>
+    </nav>
+
+    <header class="zodiac-profile-hero">
+      <div class="zodiac-profile-hero__copy">
+        <p class="eyebrow">АСТРОЛОГИЧЕСКИЙ ПРОФИЛЬ · ДЕМО</p>
+        <div class="zodiac-profile-title">
+          <ZodiacIcon glyph={sign.glyph} label={sign.name} size={64} decorative />
+          <div><h1>{sign.name}</h1><p>{sign.dates}</p></div>
+        </div>
+        <p>{profile.character}</p>
+        <div class="zodiac-profile-facts" aria-label="Основные характеристики">
+          <span><small>СТИХИЯ</small>{profile.element}</span>
+          <span><small>МОДАЛЬНОСТЬ</small>{profile.modality}</span>
+          <span><small>УПРАВИТЕЛЬ</small>{profile.rulers}</span>
+        </div>
+        <div class="zodiac-profile-actions">
+          <a class="button button--primary" href={`/horoscope/?sign=${sign.id}#top`}
+            >Гороскоп на сегодня <span aria-hidden="true">→</span></a
+          >
+          <a class="text-link" href="/zodiac/">Все знаки <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <CelestialScene className="zodiac-profile-scene" />
+    </header>
+
+    <div class="zodiac-profile-grid">
+      <section class="profile-panel">
+        <p class="eyebrow">РЕСУРСЫ</p><h2>Сильные стороны</h2>
+        <ul>{profile.strengths.map((item) => <li>{item}</li>)}</ul>
+      </section>
+      <section class="profile-panel">
+        <p class="eyebrow">ЗОНЫ ВНИМАНИЯ</p><h2>Возможные сложности</h2>
+        <ul>{profile.challenges.map((item) => <li>{item}</li>)}</ul>
+      </section>
+      <section class="profile-panel profile-panel--wide">
+        <p class="eyebrow">ОТНОШЕНИЯ</p><h2>В близком контакте</h2><p>{profile.relationships}</p>
+      </section>
+      <section class="profile-panel">
+        <p class="eyebrow">ДЕЛО</p><h2>Работа</h2><p>{profile.work}</p>
+      </section>
+      <section class="profile-panel">
+        <p class="eyebrow">РЕСУРСЫ</p><h2>Финансы</h2><p>{profile.finance}</p>
+      </section>
+      <section class="profile-panel profile-panel--wide zodiac-compatibility">
+        <p class="eyebrow">СОВМЕСТИМОСТЬ · АСТРОЛОГИЧЕСКАЯ ТРАДИЦИЯ</p>
+        <h2>Знаки для изучения совместимости</h2>
+        <p>Это тематическая навигация, а не оценка отношений или научный вывод.</p>
+        <div>
+          {
+            profile.compatibleSigns.map((id) => {
+              const relatedSign = findZodiacSign(id);
+              return (
+                <a href={`/zodiac/${id}/`}>
+                  <ZodiacIcon
+                    glyph={relatedSign.glyph}
+                    label={relatedSign.name}
+                    size={24}
+                    decorative
+                  />
+                  {relatedSign.name}
+                </a>
+              );
+            })
+          }
+        </div>
+      </section>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

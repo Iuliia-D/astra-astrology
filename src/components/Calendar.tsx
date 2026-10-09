@@ -1,8 +1,13 @@
+import type { CelestialEvent } from '../types/astronomy';
+
 type CalendarProps = {
   year: number;
   month: number;
   currentDay: number;
   eventDays?: number[];
+  events?: readonly CelestialEvent[];
+  currentDate?: string;
+  selectedDate?: string;
 };
 
 const weekdays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
@@ -21,7 +26,15 @@ const monthNames = [
   'ДЕКАБРЬ',
 ];
 
-export function Calendar({ year, month, currentDay, eventDays = [] }: CalendarProps) {
+export function Calendar({
+  year,
+  month,
+  currentDay,
+  eventDays = [],
+  events = [],
+  currentDate,
+  selectedDate,
+}: CalendarProps) {
   const dayCount = new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
   const mondayOffset = (new Date(Date.UTC(year, month, 1)).getUTCDay() + 6) % 7;
   const cellCount = Math.ceil((mondayOffset + dayCount) / 7) * 7;
@@ -52,21 +65,28 @@ export function Calendar({ year, month, currentDay, eventDays = [] }: CalendarPr
           </span>
         ))}
         {days.map((day, index) => {
-          const hasEvent = day !== null && eventDays.includes(day);
+          const dateKey = day
+            ? `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+            : '';
+          const dayEvents = events.filter(
+            (event) => event.start === dateKey || event.end === dateKey,
+          );
+          const hasEvent = day !== null && (eventDays.includes(day) || dayEvents.length > 0);
+          if (day === null)
+            return <span className="month-grid__day" key={index} aria-hidden="true" />;
+
           return (
-            <span
-              className={`month-grid__day ${day === currentDay ? 'is-today' : ''} ${hasEvent ? 'has-event' : ''}`}
+            <a
+              className={`month-grid__day ${day === currentDay && currentDate === dateKey ? 'is-today' : ''} ${dateKey === selectedDate ? 'is-selected' : ''} ${hasEvent ? 'has-event' : ''}`}
               key={index}
               role="gridcell"
-              aria-label={
-                day
-                  ? `${day} ${monthNames[month].toLowerCase()}${hasEvent ? ', событие' : ''}`
-                  : undefined
-              }
+              href={`/calendar/?date=${dateKey}`}
+              aria-current={day === currentDay && currentDate === dateKey ? 'date' : undefined}
+              aria-label={`${day} ${monthNames[month].toLowerCase()}${dayEvents.length ? `, ${dayEvents.map((event) => event.title).join(', ')}` : hasEvent ? ', событие' : ''}`}
             >
               {day}
               {hasEvent && <i aria-hidden="true" />}
-            </span>
+            </a>
           );
         })}
       </div>

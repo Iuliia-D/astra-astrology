@@ -1,0 +1,25 @@
+---
+import { CalendarExplorer } from '../../components/CalendarExplorer';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const now = new Date();
+const initialToday = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+---
+
+<BaseLayout
+  title="Космический календарь — ASTRA"
+  description="Месячный и списочный вид демонстрационных небесных событий ASTRA."
+>
+  <Header currentPage="calendar" />
+  <main class="calendar-page page-container">
+    <header class="page-intro page-intro--left">
+      <p class="eyebrow">ASTRA · НАВИГАЦИЯ</p>
+      <h1>Календарь неба</h1>
+      <p>Просматривайте демонстрационные события по датам или хронологическим списком.</p>
+    </header>
+    <CalendarExplorer client:load initialToday={initialToday} />
+  </main>
+  <Footer />
+</BaseLayout>

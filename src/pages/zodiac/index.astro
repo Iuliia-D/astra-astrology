@@ -1,0 +1,49 @@
+---
+import { ZodiacIcon } from '../../components/ui/ZodiacIcon';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
+import { zodiacProfiles } from '../../data/zodiacProfiles';
+import { zodiacSigns } from '../../data/zodiac';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Знаки зодиака — ASTRA"
+  description="Каталог 12 знаков зодиака ASTRA: даты, стихии и астрологические профили."
+>
+  <Header currentPage="zodiac" />
+  <main class="zodiac-catalog page-container">
+    <header class="page-intro">
+      <p class="eyebrow">АСТРОЛОГИЧЕСКИЙ СПРАВОЧНИК</p>
+      <h1>Знаки зодиака</h1>
+      <p>Двенадцать профилей: даты, стихии и краткие заметки в рамках астрологической традиции.</p>
+      <span class="data-badge"
+        ><span class="status-dot"></span>ИНТЕРПРЕТАЦИОННЫЙ КОНТЕНТ · ДЕМО</span
+      >
+    </header>
+
+    <section class="zodiac-directory" aria-label="Все знаки зодиака">
+      {
+        zodiacSigns.map((sign) => {
+          const profile = zodiacProfiles[sign.id];
+          return (
+            <a class="zodiac-directory-card" href={`/zodiac/${sign.id}/`}>
+              <ZodiacIcon glyph={sign.glyph} label={sign.name} size={40} decorative />
+              <div>
+                <h2>{sign.name}</h2>
+                <p>{sign.dates}</p>
+                <span>
+                  {profile.element} · {profile.modality.toLowerCase()}
+                </span>
+              </div>
+              <span class="zodiac-directory-card__arrow" aria-hidden="true">
+                ↗
+              </span>
+            </a>
+          );
+        })
+      }
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

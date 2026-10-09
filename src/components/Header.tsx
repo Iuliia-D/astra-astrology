@@ -1,21 +1,25 @@
-const homeLinks = [
-  { label: 'Сегодня', href: '#top', active: true },
-  { label: 'Календарь', href: '#calendar' },
-  { label: 'Знаки', href: '#forecast' },
-  { label: 'Совместимость', href: '#forecast' },
-  { label: 'События', href: '#events' },
-];
+type CurrentPage =
+  'home' | 'horoscope' | 'calendar' | 'zodiac' | 'zodiacDetail' | 'events' | 'eventDetail';
 
-const horoscopeLinks = [
-  { label: 'Сегодня', href: '/#top' },
-  { label: 'Календарь', href: '/#calendar' },
-  { label: 'Знаки', href: '#horoscope-selector', active: true },
-  { label: 'Совместимость', href: '/#forecast' },
-  { label: 'События', href: '/#events' },
-];
-
-export function Header({ currentPage = 'home' }: { currentPage?: 'home' | 'horoscope' }) {
-  const links = currentPage === 'horoscope' ? horoscopeLinks : homeLinks;
+export function Header({ currentPage = 'home' }: { currentPage?: CurrentPage }) {
+  const activeKey =
+    currentPage === 'home' || currentPage === 'horoscope'
+      ? 'today'
+      : currentPage.startsWith('zodiac')
+        ? 'zodiac'
+        : currentPage.startsWith('event')
+          ? 'events'
+          : 'calendar';
+  const links = [
+    {
+      key: 'today',
+      label: 'Сегодня',
+      href: currentPage === 'home' ? '#top' : currentPage === 'horoscope' ? '/horoscope/' : '/',
+    },
+    { key: 'calendar', label: 'Календарь', href: '/calendar/' },
+    { key: 'zodiac', label: 'Знаки', href: '/zodiac/' },
+    { key: 'events', label: 'События', href: '/events/' },
+  ].map((link) => ({ ...link, active: link.key === activeKey }));
   const homeHref = currentPage === 'home' ? '#top' : '/#top';
 
   return (
@@ -29,7 +33,7 @@ export function Header({ currentPage = 'home' }: { currentPage?: 'home' | 'horos
       <nav className="desktop-nav" aria-label="Основная навигация">
         {links.map((link) => (
           <a
-            key={link.label}
+            key={link.key}
             href={link.href}
             className={link.active ? 'is-active' : ''}
             aria-current={link.active ? 'page' : undefined}
@@ -60,7 +64,7 @@ export function Header({ currentPage = 'home' }: { currentPage?: 'home' | 'horos
           </summary>
           <nav aria-label="Мобильная навигация">
             {links.map((link) => (
-              <a key={link.label} href={link.href} aria-current={link.active ? 'page' : undefined}>
+              <a key={link.key} href={link.href} aria-current={link.active ? 'page' : undefined}>
                 {link.label}
               </a>
             ))}

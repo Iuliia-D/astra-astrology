@@ -1,0 +1,25 @@
+---
+import { EventsTimeline } from '../../components/EventsTimeline';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="События небесной хронологии — ASTRA"
+  description="Хронология демонстрационных лунных событий, периодов, переходов и соединений ASTRA."
+>
+  <Header currentPage="events" />
+  <main class="events-page page-container">
+    <header class="page-intro page-intro--left">
+      <p class="eyebrow">COSMIC TIMELINE · ДЕМО</p>
+      <h1>Хронология событий</h1>
+      <p>
+        Точечные события и временные периоды собраны в одном каталоге. Астрономические данные и
+        интерпретации разделены.
+      </p>
+    </header>
+    <EventsTimeline client:load />
+  </main>
+  <Footer />
+</BaseLayout>

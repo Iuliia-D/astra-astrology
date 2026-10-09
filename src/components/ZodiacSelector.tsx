@@ -167,6 +167,14 @@ export function ForecastSection() {
           <span>Оставить место для уточнений</span>
         </div>
       </div>
+      <div className="forecast-page-links">
+        <a className="text-link" href={`/horoscope/?sign=${sign.id}#top`}>
+          Открыть прогноз <span aria-hidden="true">↗</span>
+        </a>
+        <a className="text-link" href={`/zodiac/${sign.id}/`}>
+          Профиль знака <span aria-hidden="true">↗</span>
+        </a>
+      </div>
     </section>
   );
 }

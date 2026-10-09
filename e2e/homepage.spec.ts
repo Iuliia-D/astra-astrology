@@ -61,5 +61,5 @@ test('page has accessible landmarks, keyboard focus, and reduced-motion support'
       .locator('.scene-stars circle')
       .first()
       .evaluate((element) => getComputedStyle(element).animationDuration),
-  ).toMatch(/1e-05s|0\.00001s|0\.01ms/);
+  ).toMatch(/0s|1e-05s|0\.00001s|0\.01ms/);
 });

@@ -1,0 +1,74 @@
+---
+import { CelestialScene } from '../../../components/CelestialScene';
+import { EventDataToggle } from '../../../components/EventDataToggle';
+import { Footer } from '../../../components/Footer';
+import { Header } from '../../../components/Header';
+import { ZodiacIcon } from '../../../components/ui/ZodiacIcon';
+import { celestialEvents, formatEventRange } from '../../../data/events';
+import { findZodiacSign } from '../../../data/zodiac';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return celestialEvents.map((event) => ({ params: { slug: event.id }, props: { event } }));
+}
+
+const { event } = Astro.props;
+---
+
+<BaseLayout
+  title={`${event.title} — событие ASTRA`}
+  description={`${event.title}: ${formatEventRange(event)}. Демонстрационные астрономические данные и отдельная астрологическая интерпретация.`}
+>
+  <Header currentPage="eventDetail" />
+  <main class="event-detail page-container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><a href="/events/">События</a>
+      <span aria-hidden="true">/</span><span aria-current="page">{event.title}</span>
+    </nav>
+
+    <header class="event-detail-hero">
+      <div>
+        <p class="eyebrow">
+          {event.type === 'period' ? 'ПЕРИОД' : 'ТОЧЕЧНОЕ СОБЫТИЕ'} · ДЕМО-ДАННЫЕ
+        </p>
+        <h1>{event.title}</h1>
+        <p class="event-detail-hero__date">{formatEventRange(event)} · {event.timezone}</p>
+        <p>{event.summary}</p>
+      </div>
+      <CelestialScene className="event-detail-scene" />
+    </header>
+
+    <EventDataToggle client:load event={event} />
+
+    <section class="event-related-signs" aria-labelledby="event-signs-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">АСТРОЛОГИЧЕСКАЯ ИНТЕРПРЕТАЦИЯ</p><h2 id="event-signs-heading">
+            Связанные знаки
+          </h2>
+        </div>
+        <a class="text-link" href="/zodiac/">Все знаки <span aria-hidden="true">↗</span></a>
+      </div>
+      <p>Список демонстрационный и не является расчётом влияния события.</p>
+      <div>
+        {
+          event.affected_signs.map((id: string) => {
+            const sign = findZodiacSign(id);
+            return (
+              <a href={`/zodiac/${id}/`}>
+                <ZodiacIcon glyph={sign.glyph} label={sign.name} size={24} decorative />
+                {sign.name}
+              </a>
+            );
+          })
+        }
+      </div>
+    </section>
+
+    <nav class="event-detail-next" aria-label="Другие разделы">
+      <a class="text-link" href="/events/">← К хронологии</a>
+      <a class="text-link" href="/calendar/">Календарь событий <span aria-hidden="true">↗</span></a>
+    </nav>
+  </main>
+  <Footer />
+</BaseLayout>
