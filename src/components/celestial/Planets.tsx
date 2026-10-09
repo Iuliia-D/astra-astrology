@@ -9,7 +9,11 @@ export function Planets({ bodies }: PlanetsProps) {
         const x = 430 + Math.cos(body.angle) * body.orbit;
         const y = 320 + Math.sin(body.angle) * body.orbit;
         return (
-          <g key={body.id}>
+          <g
+            key={body.id}
+            className="scene-orbiting-body"
+            style={{ animationDuration: `${Math.round(90 + body.orbit * 1.15)}s` }}
+          >
             <circle
               cx={x}
               cy={y}

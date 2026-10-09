@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react';
+
 const stars = Array.from({ length: 116 }, (_, index) => ({
   x: (index * 137 + 31) % 860,
   y: (index * 83 + 17) % 640,
@@ -15,7 +17,7 @@ export function StarField() {
           cy={star.y}
           r={star.r}
           fill="white"
-          opacity={star.opacity}
+          style={{ '--star-opacity': star.opacity } as CSSProperties}
         />
       ))}
     </g>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { zodiacSigns } from '../data/zodiac';
 import { demoForecastCopy, forecastScores } from '../data/forecast';
 import { ZodiacIcon } from './ui/ZodiacIcon';
@@ -32,11 +32,35 @@ export function ZodiacSelector({ value, onChange }: ZodiacSelectorProps) {
 
 export function ForecastSection() {
   const [selected, setSelected] = useState('libra');
+  const sectionRef = useRef<HTMLElement>(null);
   const sign = zodiacSigns.find((item) => item.id === selected) ?? zodiacSigns[6];
 
   useEffect(() => {
     const saved = window.localStorage.getItem('astra-zodiac-sign');
     if (saved && zodiacSigns.some((item) => item.id === saved)) setSelected(saved);
+  }, []);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (
+      !section ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      !('IntersectionObserver' in window)
+    ) {
+      return;
+    }
+
+    section.dataset.revealState = 'pending';
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        section.dataset.revealState = 'visible';
+        observer.disconnect();
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -6% 0px' },
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
   }, []);
 
   function selectSign(id: string) {
@@ -45,7 +69,13 @@ export function ForecastSection() {
   }
 
   return (
-    <section className="section forecast-section" id="forecast" aria-labelledby="forecast-title">
+    <section
+      ref={sectionRef}
+      className="section forecast-section"
+      id="forecast"
+      aria-labelledby="forecast-title"
+      data-reveal
+    >
       <div className="forecast-intro">
         <div>
           <p className="eyebrow">ВАШ ПРОГНОЗ · 08 ОКТЯБРЯ</p>

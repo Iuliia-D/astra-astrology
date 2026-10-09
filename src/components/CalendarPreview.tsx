@@ -2,7 +2,12 @@ import { Calendar } from './Calendar';
 
 export function CalendarPreview() {
   return (
-    <section className="section calendar-section" id="calendar" aria-labelledby="calendar-title">
+    <section
+      className="section calendar-section"
+      id="calendar"
+      aria-labelledby="calendar-title"
+      data-reveal
+    >
       <div className="section-heading">
         <div>
           <p className="eyebrow">АСТРОЛОГИЧЕСКИЙ КАЛЕНДАРЬ</p>

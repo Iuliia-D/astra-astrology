@@ -1,4 +1,4 @@
-const links = [
+const homeLinks = [
   { label: 'Сегодня', href: '#top', active: true },
   { label: 'Календарь', href: '#calendar' },
   { label: 'Знаки', href: '#forecast' },
@@ -6,10 +6,21 @@ const links = [
   { label: 'События', href: '#events' },
 ];
 
-export function Header() {
+const horoscopeLinks = [
+  { label: 'Сегодня', href: '/#top' },
+  { label: 'Календарь', href: '/#calendar' },
+  { label: 'Знаки', href: '#horoscope-selector', active: true },
+  { label: 'Совместимость', href: '/#forecast' },
+  { label: 'События', href: '/#events' },
+];
+
+export function Header({ currentPage = 'home' }: { currentPage?: 'home' | 'horoscope' }) {
+  const links = currentPage === 'horoscope' ? horoscopeLinks : homeLinks;
+  const homeHref = currentPage === 'home' ? '#top' : '/#top';
+
   return (
     <header className="site-header">
-      <a className="brand" href="#top" aria-label="ASTRA — на главную">
+      <a className="brand" href={homeHref} aria-label="ASTRA — на главную">
         <span className="brand__mark" aria-hidden="true">
           ✳
         </span>
@@ -17,7 +28,12 @@ export function Header() {
       </a>
       <nav className="desktop-nav" aria-label="Основная навигация">
         {links.map((link) => (
-          <a key={link.label} href={link.href} className={link.active ? 'is-active' : ''}>
+          <a
+            key={link.label}
+            href={link.href}
+            className={link.active ? 'is-active' : ''}
+            aria-current={link.active ? 'page' : undefined}
+          >
             {link.label}
           </a>
         ))}
@@ -44,7 +60,7 @@ export function Header() {
           </summary>
           <nav aria-label="Мобильная навигация">
             {links.map((link) => (
-              <a key={link.label} href={link.href}>
+              <a key={link.label} href={link.href} aria-current={link.active ? 'page' : undefined}>
                 {link.label}
               </a>
             ))}

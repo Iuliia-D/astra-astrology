@@ -1,0 +1,15 @@
+---
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
+import { HoroscopePage } from '../../components/HoroscopePage';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Гороскоп на сегодня — ASTRA"
+  description="Ежедневные демонстрационные прогнозы ASTRA для 12 знаков зодиака. Выберите знак и откройте заметку дня."
+>
+  <Header currentPage="horoscope" />
+  <HoroscopePage client:load />
+  <Footer />
+</BaseLayout>

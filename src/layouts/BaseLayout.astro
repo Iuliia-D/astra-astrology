@@ -27,5 +27,31 @@ const canonical = new URL(Astro.url.pathname, 'https://astra-astrology.com').toS
   </head>
   <body>
     <slot />
+    <script>
+      const revealTargets = document.querySelectorAll<HTMLElement>(
+        '.calendar-section[data-reveal], .metrics-section[data-reveal], .events-section[data-reveal]',
+      );
+      const canAnimateReveals =
+        window.matchMedia('(prefers-reduced-motion: no-preference)').matches &&
+        'IntersectionObserver' in window;
+
+      if (canAnimateReveals && revealTargets.length) {
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              (entry.target as HTMLElement).dataset.revealState = 'visible';
+              revealObserver.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.08, rootMargin: '0px 0px -6% 0px' },
+        );
+
+        revealTargets.forEach((target) => {
+          target.dataset.revealState = 'pending';
+          revealObserver.observe(target);
+        });
+      }
+    </script>
   </body>
 </html>
