@@ -1,0 +1,32 @@
+---
+import { CompatibilityExplorer } from '../../components/CompatibilityExplorer';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Совместимость знаков — ASTRA"
+  description="Демонстрационный раздел ASTRA о совместимости знаков. Выберите пару и изучите структуру интерпретации без прогнозов об отношениях."
+>
+  <Header currentPage="compatibility" />
+  <main class="page-container compatibility-page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><span aria-current="page"
+        >Совместимость</span
+      >
+    </nav>
+    <header class="page-intro page-intro--left">
+      <p class="eyebrow">СОПОСТАВЛЕНИЕ АСТРОЛОГИЧЕСКИХ ТРАДИЦИЙ</p>
+      <h1>Совместимость</h1>
+      <p>
+        Выберите два знака, чтобы посмотреть, как может быть устроен этот раздел ASTRA. Его
+        материалы не оценивают реальные отношения.
+      </p>
+      <span class="data-badge"><span class="status-dot"></span>ДЕМО-КОНТЕНТ · НЕ НАУЧНЫЙ МЕТОД</span
+      >
+    </header>
+    <CompatibilityExplorer client:load />
+  </main>
+  <Footer />
+</BaseLayout>

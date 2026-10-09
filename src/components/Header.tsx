@@ -1,5 +1,14 @@
 type CurrentPage =
-  'home' | 'horoscope' | 'calendar' | 'zodiac' | 'zodiacDetail' | 'events' | 'eventDetail';
+  | 'home'
+  | 'horoscope'
+  | 'calendar'
+  | 'zodiac'
+  | 'zodiacDetail'
+  | 'events'
+  | 'eventDetail'
+  | 'compatibility'
+  | 'about'
+  | 'service';
 
 export function Header({ currentPage = 'home' }: { currentPage?: CurrentPage }) {
   const activeKey =
@@ -9,7 +18,11 @@ export function Header({ currentPage = 'home' }: { currentPage?: CurrentPage }) 
         ? 'zodiac'
         : currentPage.startsWith('event')
           ? 'events'
-          : 'calendar';
+          : currentPage === 'compatibility'
+            ? 'compatibility'
+            : currentPage === 'calendar'
+              ? 'calendar'
+              : null;
   const links = [
     {
       key: 'today',
@@ -19,6 +32,7 @@ export function Header({ currentPage = 'home' }: { currentPage?: CurrentPage }) 
     { key: 'calendar', label: 'Календарь', href: '/calendar/' },
     { key: 'zodiac', label: 'Знаки', href: '/zodiac/' },
     { key: 'events', label: 'События', href: '/events/' },
+    { key: 'compatibility', label: 'Совместимость', href: '/compatibility/' },
   ].map((link) => ({ ...link, active: link.key === activeKey }));
   const homeHref = currentPage === 'home' ? '#top' : '/#top';
 

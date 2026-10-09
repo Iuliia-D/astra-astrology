@@ -1,0 +1,45 @@
+---
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import { servicePages } from '../data/servicePages';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return servicePages.map((page) => ({ params: { document: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout title={`${page.title} — ASTRA`} description={page.intro}>
+  <Header currentPage="service" />
+  <main class="page-container editorial-page service-page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span aria-hidden="true">/</span><span aria-current="page"
+        >{page.title}</span
+      >
+    </nav>
+    <header class="page-intro page-intro--left">
+      <p class="eyebrow">{page.eyebrow}</p>
+      <h1>{page.title}</h1>
+      <p>{page.intro}</p>
+    </header>
+    <div class="service-sections">
+      {
+        page.sections.map((section) => (
+          <section class="profile-panel">
+            <h2>{section.heading}</h2>
+            {section.paragraphs.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+          </section>
+        ))
+      }
+    </div>
+    <p class="service-note">
+      Информационная версия для MVP. Перед публичным запуском сверить юридические тексты с
+      фактической моделью проекта и применимыми требованиями.
+    </p>
+  </main>
+  <Footer />
+</BaseLayout>
