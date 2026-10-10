@@ -1,0 +1,1682 @@
+{
+  "schema_version": "1.0.0",
+  "project": "ASTRA",
+  "locale": "ru-RU",
+  "timezone": "Europe/Moscow",
+  "signs": [
+    "aries",
+    "taurus",
+    "gemini",
+    "cancer",
+    "leo",
+    "virgo",
+    "libra",
+    "scorpio",
+    "sagittarius",
+    "capricorn",
+    "aquarius",
+    "pisces"
+  ],
+  "content_items": [
+    {
+      "id": "main-universal-001",
+      "version": 1,
+      "block_type": "main",
+      "text": "Сегодня полезно начать с простого вопроса: какое дело действительно заслуживает вашего внимания? Когда задач слишком много, возникает соблазн переключаться между ними и в итоге не продвинуться ни в одной. Выберите один приоритет, определите ближайший конкретный шаг и сначала выполните его. Остальное можно распределить по времени, а не держать одновременно в голове.\n\nВ разговорах старайтесь уточнять ожидания, особенно если речь идёт о сроках, обязанностях или совместных планах. Не рассчитывайте, что другой человек сам догадается, что для вас важно. Спокойное уточнение не делает общение холодным — оно помогает избежать ненужных обид и переделок. Если вы не готовы дать ответ сразу, нормально взять паузу и вернуться к вопросу позже.\n\nВ личных делах оставьте место для гибкости. План может измениться, и это не обязательно означает, что день пошёл не так. Оценивайте результат по тому, что действительно удалось сделать, а не по списку, который изначально был слишком большим. Вечером полезно отметить один завершённый шаг и решить, с чего вы начнёте завтра. Сегодняшняя задача — не успеть всё, а яснее увидеть следующий шаг.",
+      "scope": "universal",
+      "topics": [
+        "priorities",
+        "communication",
+        "daily_planning"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 30,
+      "review_status": "approved",
+      "notes": "Универсальный демонстрационный прогноз; не привязан к астрономическим событиям."
+    },
+    {
+      "id": "main-universal-002",
+      "version": 1,
+      "block_type": "main",
+      "text": "Сегодня стоит внимательнее отнестись к собственному темпу. Если вы постоянно реагируете на чужие просьбы, сообщения и внезапные задачи, попробуйте ненадолго вернуть себе инициативу. Определите, что требует ответа прямо сейчас, что может подождать, а что вообще не относится к вашим обязанностям. Такое разделение поможет действовать спокойнее и не расходовать силы на всё подряд.\n\nВ работе и бытовых делах лучше опираться на конкретику. Разбейте крупную задачу на небольшие этапы, проверьте исходные договорённости и заранее обозначьте ограничения, если времени или ресурсов меньше, чем хотелось бы. Не нужно обещать идеальный результат, чтобы показать заинтересованность. Надёжнее назвать реалистичный срок и выполнить то, о чём вы договорились.\n\nВ отношениях обратите внимание на взаимность. Поддержка не обязательно должна быть одинаковой каждую минуту, но важно, чтобы потребности обеих сторон оставались заметными. Можно проявить участие и одновременно честно сказать, что сейчас вам нужно время на свои дела. В конце дня не требуйте от себя окончательных ответов на все вопросы. Достаточно понять, что стало яснее и какой небольшой шаг будет разумно сделать дальше.",
+      "scope": "universal",
+      "topics": [
+        "priorities",
+        "communication",
+        "daily_planning"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 30,
+      "review_status": "approved",
+      "notes": "Универсальный демонстрационный прогноз; не привязан к астрономическим событиям."
+    },
+    {
+      "id": "main-universal-003",
+      "version": 1,
+      "block_type": "main",
+      "text": "Сегодня полезно проверить, не пытаетесь ли вы решить слишком много вопросов одновременно. Иногда ощущение срочности появляется не потому, что ситуация действительно требует немедленного действия, а потому, что несколько незавершённых дел накопились в один момент. Запишите их, выберите наиболее важное и сформулируйте результат, которого хотите добиться. Остальные задачи можно отложить, делегировать или выполнить позже.\n\nВ общении отдавайте предпочтение ясным формулировкам. Если условия вам не подходят, обсудите их до того, как согласитесь. Если вы не поняли чужую позицию, задайте прямой вопрос вместо того, чтобы строить предположения. Это особенно полезно в совместных проектах и бытовых договорённостях, где недосказанность легко превращается в лишнюю работу.\n\nНебольшая пауза тоже может быть продуктивной. Прогулка, спокойный обед или короткий перерыв помогут сменить фокус и вернуться к делу с более ясной головой. Не превращайте отдых в ещё одну задачу, которую нужно выполнить идеально. Вечером оцените не количество занятых часов, а то, что действительно изменилось благодаря вашим действиям. Даже один завершённый этап — полноценный результат, если он приближает вас к важной цели.",
+      "scope": "universal",
+      "topics": [
+        "priorities",
+        "communication",
+        "daily_planning"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 30,
+      "review_status": "approved",
+      "notes": "Универсальный демонстрационный прогноз; не привязан к астрономическим событиям."
+    },
+    {
+      "id": "accent-001",
+      "version": 1,
+      "block_type": "accent",
+      "text": "Сначала определите главное, затем распределяйте силы на остальное.",
+      "scope": "universal",
+      "topics": [
+        "priorities"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "accent-002",
+      "version": 1,
+      "block_type": "accent",
+      "text": "Ясные договорённости сегодня полезнее догадок и намёков.",
+      "scope": "universal",
+      "topics": [
+        "communication"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "accent-003",
+      "version": 1,
+      "block_type": "accent",
+      "text": "Не каждое срочное сообщение требует немедленной реакции.",
+      "scope": "universal",
+      "topics": [
+        "boundaries"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "accent-004",
+      "version": 1,
+      "block_type": "accent",
+      "text": "Небольшой завершённый шаг ценнее большого плана без действий.",
+      "scope": "universal",
+      "topics": [
+        "progress"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "dynamic"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "accent-005",
+      "version": 1,
+      "block_type": "accent",
+      "text": "Оставьте в расписании пространство для отдыха и изменений.",
+      "scope": "universal",
+      "topics": [
+        "balance"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "accent-006",
+      "version": 1,
+      "block_type": "accent",
+      "text": "Проверяйте реальные условия, прежде чем брать на себя обязательства.",
+      "scope": "universal",
+      "topics": [
+        "planning"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "love-001",
+      "version": 1,
+      "block_type": "love",
+      "text": "Спокойный разговор поможет прояснить ожидания и избежать лишних догадок.",
+      "scope": "universal",
+      "topics": [
+        "communication"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "love-002",
+      "version": 1,
+      "block_type": "love",
+      "text": "Проявляйте внимание, но не забывайте прямо говорить о собственных потребностях.",
+      "scope": "universal",
+      "topics": [
+        "boundaries"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "love-003",
+      "version": 1,
+      "block_type": "love",
+      "text": "Не спешите делать выводы по одному сообщению или мимолётной реакции.",
+      "scope": "universal",
+      "topics": [
+        "patience"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "love-004",
+      "version": 1,
+      "block_type": "love",
+      "text": "Совместный небольшой план может дать больше близости, чем громкие обещания.",
+      "scope": "universal",
+      "topics": [
+        "shared_plans"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "positive"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "love-005",
+      "version": 1,
+      "block_type": "love",
+      "text": "Если мнения расходятся, сначала уточните, в чём именно состоит разница.",
+      "scope": "universal",
+      "topics": [
+        "communication"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "love-006",
+      "version": 1,
+      "block_type": "love",
+      "text": "Оставьте друг другу возможность побыть наедине с собственными мыслями.",
+      "scope": "universal",
+      "topics": [
+        "boundaries"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "career-001",
+      "version": 1,
+      "block_type": "career",
+      "text": "Выберите одну приоритетную задачу и определите ближайший проверяемый результат.",
+      "scope": "universal",
+      "topics": [
+        "priorities"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "dynamic"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "career-002",
+      "version": 1,
+      "block_type": "career",
+      "text": "Перед началом проверьте сроки, зависимости и то, кто отвечает за каждый этап.",
+      "scope": "universal",
+      "topics": [
+        "planning"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "career-003",
+      "version": 1,
+      "block_type": "career",
+      "text": "Если ресурсов недостаточно, обозначьте ограничения заранее, а не в последний момент.",
+      "scope": "universal",
+      "topics": [
+        "boundaries"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "career-004",
+      "version": 1,
+      "block_type": "career",
+      "text": "Полезно завершить небольшой накопившийся этап вместо того, чтобы начинать сразу несколько новых.",
+      "scope": "universal",
+      "topics": [
+        "completion"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "career-005",
+      "version": 1,
+      "block_type": "career",
+      "text": "Задавайте уточняющие вопросы, если требования или критерии готовности неясны.",
+      "scope": "universal",
+      "topics": [
+        "communication"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "career-006",
+      "version": 1,
+      "block_type": "career",
+      "text": "Пересмотрите список задач и уберите то, что больше не соответствует текущим приоритетам.",
+      "scope": "universal",
+      "topics": [
+        "priorities"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "energy-001",
+      "version": 1,
+      "block_type": "energy",
+      "text": "Чередуйте сосредоточенную работу и короткие перерывы, не дожидаясь полного утомления.",
+      "scope": "universal",
+      "topics": [
+        "balance"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "energy-002",
+      "version": 1,
+      "block_type": "energy",
+      "text": "Сократите число переключений между задачами: это поможет сохранить внимание.",
+      "scope": "universal",
+      "topics": [
+        "focus"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "dynamic"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "energy-003",
+      "version": 1,
+      "block_type": "energy",
+      "text": "Оставьте в расписании небольшой запас времени на непредвиденные дела.",
+      "scope": "universal",
+      "topics": [
+        "balance"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "energy-004",
+      "version": 1,
+      "block_type": "energy",
+      "text": "Не требуйте от себя одинакового темпа во всех делах; распределяйте нагрузку разумно.",
+      "scope": "universal",
+      "topics": [
+        "self_care"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "energy-005",
+      "version": 1,
+      "block_type": "energy",
+      "text": "Небольшая прогулка или смена обстановки может помочь переключить внимание.",
+      "scope": "universal",
+      "topics": [
+        "reset"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "positive"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "energy-006",
+      "version": 1,
+      "block_type": "energy",
+      "text": "Сосредоточьтесь на ближайшем шаге, а не на всём объёме работы сразу.",
+      "scope": "universal",
+      "topics": [
+        "focus"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "finance-001",
+      "version": 1,
+      "block_type": "finance",
+      "text": "Перед покупкой проверьте, соответствует ли она реальной потребности и вашему плану расходов.",
+      "scope": "universal",
+      "topics": [
+        "planning"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "finance-002",
+      "version": 1,
+      "block_type": "finance",
+      "text": "Сравните условия и полную стоимость, прежде чем принимать финансовое решение.",
+      "scope": "universal",
+      "topics": [
+        "due_diligence"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "finance-003",
+      "version": 1,
+      "block_type": "finance",
+      "text": "Полезно записать ближайшие обязательные платежи и оценить доступный остаток бюджета.",
+      "scope": "universal",
+      "topics": [
+        "budget"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "dynamic"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "finance-004",
+      "version": 1,
+      "block_type": "finance",
+      "text": "Не принимайте решение под давлением срочности, если условия ещё неясны.",
+      "scope": "universal",
+      "topics": [
+        "caution"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "finance-005",
+      "version": 1,
+      "block_type": "finance",
+      "text": "Отделите необходимые расходы от желательных и заранее определите допустимый лимит.",
+      "scope": "universal",
+      "topics": [
+        "budget"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "finance-006",
+      "version": 1,
+      "block_type": "finance",
+      "text": "Если решение затрагивает общие деньги, заранее согласуйте ожидания со всеми участниками.",
+      "scope": "universal",
+      "topics": [
+        "shared_resources"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "do-001",
+      "version": 1,
+      "block_type": "do",
+      "text": "Запишите три текущие задачи и выберите одну главную.",
+      "scope": "universal",
+      "topics": [
+        "priorities"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "dynamic"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "do-002",
+      "version": 1,
+      "block_type": "do",
+      "text": "Уточните договорённость, в которой остались неясные сроки или обязанности.",
+      "scope": "universal",
+      "topics": [
+        "communication"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "do-003",
+      "version": 1,
+      "block_type": "do",
+      "text": "Завершите небольшой этап, который давно мешает двигаться дальше.",
+      "scope": "universal",
+      "topics": [
+        "completion"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "positive"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "do-004",
+      "version": 1,
+      "block_type": "do",
+      "text": "Заранее оставьте свободный промежуток между важными делами.",
+      "scope": "universal",
+      "topics": [
+        "planning"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "do-005",
+      "version": 1,
+      "block_type": "do",
+      "text": "Проверьте, какие задачи действительно требуют вашего участия.",
+      "scope": "universal",
+      "topics": [
+        "boundaries"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "do-006",
+      "version": 1,
+      "block_type": "do",
+      "text": "Сформулируйте следующий шаг так, чтобы его можно было выполнить за один подход.",
+      "scope": "universal",
+      "topics": [
+        "focus"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "dynamic"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "avoid-001",
+      "version": 1,
+      "block_type": "avoid",
+      "text": "Не соглашайтесь автоматически, не проверив сроки и собственные возможности.",
+      "scope": "universal",
+      "topics": [
+        "boundaries"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "avoid-002",
+      "version": 1,
+      "block_type": "avoid",
+      "text": "Не делайте выводов о чужих намерениях без уточняющего разговора.",
+      "scope": "universal",
+      "topics": [
+        "communication"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "avoid-003",
+      "version": 1,
+      "block_type": "avoid",
+      "text": "Не начинайте несколько крупных задач только из желания быстрее наверстать упущенное.",
+      "scope": "universal",
+      "topics": [
+        "priorities"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "avoid-004",
+      "version": 1,
+      "block_type": "avoid",
+      "text": "Не принимайте необратимых решений, пока ключевые условия остаются неясными.",
+      "scope": "universal",
+      "topics": [
+        "due_diligence"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "avoid-005",
+      "version": 1,
+      "block_type": "avoid",
+      "text": "Не оценивайте весь день как неудачный из-за одной задержки или ошибки.",
+      "scope": "universal",
+      "topics": [
+        "perspective"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "avoid-006",
+      "version": 1,
+      "block_type": "avoid",
+      "text": "Не заполняйте каждую свободную минуту новыми обязательствами.",
+      "scope": "universal",
+      "topics": [
+        "balance"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "cautious"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "notice-001",
+      "version": 1,
+      "block_type": "notice",
+      "text": "Заметьте, на какие задачи уходит больше времени, чем вы ожидали.",
+      "scope": "universal",
+      "topics": [
+        "time_management"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "notice-002",
+      "version": 1,
+      "block_type": "notice",
+      "text": "Обратите внимание, где ясный вопрос помогает избежать долгих предположений.",
+      "scope": "universal",
+      "topics": [
+        "communication"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "notice-003",
+      "version": 1,
+      "block_type": "notice",
+      "text": "Отметьте один результат, который вы обычно считаете слишком маленьким, чтобы его засчитать.",
+      "scope": "universal",
+      "topics": [
+        "progress"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "positive"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "notice-004",
+      "version": 1,
+      "block_type": "notice",
+      "text": "Проверьте, какие обязательства вы взяли на себя по привычке, а не по необходимости.",
+      "scope": "universal",
+      "topics": [
+        "boundaries"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "notice-005",
+      "version": 1,
+      "block_type": "notice",
+      "text": "Обратите внимание, в какой момент вам становится сложнее сохранять концентрацию.",
+      "scope": "universal",
+      "topics": [
+        "focus"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "notice-006",
+      "version": 1,
+      "block_type": "notice",
+      "text": "Заметьте, какие планы можно упростить без потери важного результата.",
+      "scope": "universal",
+      "topics": [
+        "planning"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "reflective"
+      ],
+      "min_gap_days": 7,
+      "review_status": "approved"
+    },
+    {
+      "id": "key-moment-test-001",
+      "version": 1,
+      "block_type": "key_moment",
+      "text": "Служебная запись: ключевой момент публикуется только при наличии рассчитанного события и подтверждённого правила.",
+      "scope": "test_only",
+      "topics": [
+        "event_validation"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 0,
+      "review_status": "approved",
+      "notes": "Не показывать пользователю. Используется для проверки отсутствия фиктивных точных времён."
+    },
+    {
+      "id": "event-summary-test-001",
+      "version": 1,
+      "block_type": "event_summary",
+      "text": "Служебная запись: описание события должно опираться на реальные расчётные параметры и утверждённое правило.",
+      "scope": "test_only",
+      "topics": [
+        "event_validation"
+      ],
+      "allowed_signs": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+      ],
+      "required_rule_ids": [],
+      "forbidden_rule_ids": [],
+      "allowed_tones": [
+        "neutral"
+      ],
+      "min_gap_days": 0,
+      "review_status": "approved",
+      "notes": "Не показывать пользователю как событие."
+    }
+  ],
+  "seed_notes": [
+    "Минимальный seed-набор для разработки и тестирования, не библиотека на месяцы без повторов.",
+    "Универсальные тексты не привязаны к реальным транзитам.",
+    "Записи scope=test_only нельзя публиковать как прогноз или событие.",
+    "Новые контекстные тексты добавлять только с корректными rule ID и после редакционной проверки."
+  ]
+}

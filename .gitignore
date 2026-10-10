@@ -6,6 +6,14 @@ coverage/
 playwright-report/
 test-results/
 
+# Python backend and local astronomy data
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/.local/
+data/ephemeris/*.bsp
+
 # Local environment and secrets
 .env
 .env.*

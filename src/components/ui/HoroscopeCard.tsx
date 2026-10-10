@@ -20,21 +20,25 @@ export function HoroscopeCard({
           className="horoscope-card__icon"
         />
         <div>
-          <p className="eyebrow">ДЕМО-ПРОГНОЗ · {horoscope.date}</p>
+          <p className="eyebrow">{horoscope.source === 'backend' ? 'ПУБЛИКАЦИЯ' : 'ДЕМО-ПРОГНОЗ'} · {horoscope.date}</p>
           <h2 id="horoscope-sign-title">{sign.name}</h2>
           <p className="horoscope-card__dates">{sign.dates}</p>
         </div>
       </div>
       <p className="horoscope-card__overview">{horoscope.overview}</p>
-      <div className="horoscope-card__focus">
-        <span className="status-dot" aria-hidden="true" />
-        <div>
-          <p className="eyebrow">АСТРОЛОГИЧЕСКИЙ АКЦЕНТ ДНЯ</p>
-          <p>{horoscope.focus}</p>
+      {horoscope.focus && (
+        <div className="horoscope-card__focus">
+          <span className="status-dot" aria-hidden="true" />
+          <div>
+            <p className="eyebrow">АСТРОЛОГИЧЕСКИЙ АКЦЕНТ ДНЯ</p>
+            <p>{horoscope.focus}</p>
+          </div>
         </div>
-      </div>
+      )}
       <p className="horoscope-card__note">
-        Демонстрационная интерпретация · не является расчётом по эфемеридам
+        {horoscope.source === 'backend'
+          ? 'Текст — астрологическая интерпретация; астрономические позиции рассчитаны и показаны отдельно.'
+          : 'Демонстрационная интерпретация · не является расчётом по эфемеридам'}
       </p>
     </GlassCard>
   );

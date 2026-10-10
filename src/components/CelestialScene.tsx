@@ -7,10 +7,24 @@ import { PlanetLabels } from './celestial/PlanetLabels';
 import { Planets } from './celestial/Planets';
 import { StarField } from './celestial/StarField';
 import { ZodiacRing } from './celestial/ZodiacRing';
+import { GeocentricLongitudePlot } from './celestial/GeocentricLongitudePlot';
 
-type CelestialSceneProps = { className?: string; bodies?: CelestialBody[] };
+type AstronomicalPosition = { name: string; longitude: number; latitude: number };
+type CelestialSceneProps = { className?: string; bodies?: CelestialBody[]; astronomicalPositions?: AstronomicalPosition[] };
 
-export function CelestialScene({ className = '', bodies = demoSceneBodies }: CelestialSceneProps) {
+export function CelestialScene({ className = '', bodies = demoSceneBodies, astronomicalPositions }: CelestialSceneProps) {
+  if (astronomicalPositions?.length) {
+    return (
+      <div className={`celestial-scene ${className}`} role="img" aria-label="Схема рассчитанных геоцентрических долгот небесных тел">
+        <div className="celestial-scene__nebula" aria-hidden="true" />
+        <GeocentricLongitudePlot positions={astronomicalPositions} />
+        <div className="scene-coordinates" aria-hidden="true">
+          <span>РАСЧЁТНЫЕ ДАННЫЕ</span>
+          <span>ГЕОЦЕНТРИЧЕСКИЕ ДОЛГОТЫ · TROPICAL</span>
+        </div>
+      </div>
+    );
+  }
   return (
     <div
       className={`celestial-scene ${className}`}

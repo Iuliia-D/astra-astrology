@@ -564,6 +564,50 @@ h1 {
   font-size: 7px;
   letter-spacing: 0.16em;
 }
+.geocentric-plot {
+  z-index: 1;
+  color: #f4f5f7;
+}
+.geocentric-plot__title,
+.geocentric-plot__subtitle,
+.geocentric-plot__axis,
+.geocentric-plot__body,
+.geocentric-plot__value,
+.geocentric-plot__foot {
+  fill: #aab5d0;
+  font-family: 'Inter Variable', Inter, sans-serif;
+}
+.geocentric-plot__title {
+  fill: #c2c8df;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.geocentric-plot__subtitle,
+.geocentric-plot__foot {
+  fill: #7e8aa5;
+  font-size: 12px;
+}
+.geocentric-plot__axis,
+.geocentric-plot__value {
+  fill: #9ba8c4;
+  font-size: 11px;
+}
+.geocentric-plot__body {
+  fill: #d1d7e6;
+  font-size: 13px;
+}
+.geocentric-plot__grid {
+  stroke: rgb(175 191 236 / 14%);
+  stroke-dasharray: 2 7;
+}
+.geocentric-plot__track {
+  stroke: rgb(175 191 236 / 17%);
+  stroke-width: 1;
+}
+.geocentric-plot__point {
+  fill: #aebaff;
+  filter: drop-shadow(0 0 5px rgb(139 141 255 / 45%));
+}
 .global-event {
   position: absolute;
   z-index: 3;
