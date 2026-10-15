@@ -11,6 +11,8 @@ export type HoroscopeMetric = {
 };
 
 export type DailyHoroscope = {
+  sign?: ZodiacSign['id'];
+  forecast_date?: string;
   date: string;
   overview: string;
   focus: string | null;
@@ -22,7 +24,14 @@ export type DailyHoroscope = {
   event?: { slug: string; title: string; start_utc: string | null; source_event_id: string } | null;
   astronomy?: {
     ephemeris_version: string | null;
-    positions: { name: string; longitude: number; latitude: number; sign?: string; degree_in_sign?: number; speed_deg_day?: number }[];
+    positions: {
+      name: string;
+      longitude: number;
+      latitude: number;
+      sign?: string;
+      degree_in_sign?: number;
+      speed_deg_day?: number;
+    }[];
     events: string[];
     visualization: { positions: { name: string; longitude: number; latitude: number }[] } | null;
   };
